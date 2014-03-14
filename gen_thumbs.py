@@ -37,7 +37,7 @@ def thumb_dir(dir_path, size, filter_fun):
 if __name__ == '__main__':
     parser = ArgumentParser()
 
-    parser.add_argument('--ext', '-e', help='Extension of images')
+    parser.add_argument('--ext', '-e', help='Extension of images', default='jpg')
     parser.add_argument('dirpath', help='Directory to thumbnail files.')
     parser.add_argument('--width', '-w', help='Width of the thumbnails', type=int, default=144)
     parser.add_argument('--height', '-he', help='Height of the thumbnails', type=int, default=96)
